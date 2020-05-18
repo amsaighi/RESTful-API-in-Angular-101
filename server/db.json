@@ -1,10 +1,10 @@
 {
   "employees": [
     {
-      "id": 1,
-      "name": "Tony Stark",
-      "email": "tony@mcu.com",
-      "phone": "001-123-4567"
+      "name": "Amin Saighi",
+      "email": "Email@gmail.com",
+      "phone": "+213123456",
+      "id": 1
     }
   ]
 }

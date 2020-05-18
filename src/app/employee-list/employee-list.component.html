@@ -1,8 +1,7 @@
 <div class="container custom-container-2">
 
     <!-- Show it when there is no employee -->
-    <div class="no-data text-center" *ngIf="Employee.length == 0">
-        <p>There is no employee added yet!</p>
+    <div class="no-data text-center mt-5" *ngIf="Employee.length == 0 || Employee.length !== null ">
         <button class="btn btn-outline-primary" routerLink="/create-employee">Add Empoyee</button>
     </div>
 
@@ -28,8 +27,13 @@
                         <td>{{employee.email}}</td>
                         <td>{{employee.phone}}</td>
                         <td>
-                            <span class="edit" routerLink="/employee-edit/{{employee.id}}">Edit</span>
-                            <span class="delete" (click)="deleteEmployee(employee.id)">Delete</span>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-primary active btn-sm">
+                                    <span class="edit" routerLink="/employee-edit/{{employee.id}}">Edit</span>                                </label>
+                                <label class="btn btn-danger btn-sm">
+                                    <span class="delete" (click)="deleteEmployee(employee.id)">Delete</span>
+                                </label>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
