@@ -4,6 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+> Install the dependencies in the local node_modules folder
+`npm install`
+
+> Run the JSON server.
+`json-server --watch server/db.json`
+
+> Perfect, Start the project 
+`ng serve --open`
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
